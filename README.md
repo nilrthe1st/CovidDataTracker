@@ -32,6 +32,12 @@ I built this as a summer learning project after my first year studying Computer 
 
 ---
 
+## Data File
+
+Please download the `owid-covid-data.json` file from [Our World in Data](https://github.com/owid/covid-19-data) and place it in the root directory of the project.
+
+---
+
 ##  Technologies Used
 - JDK 24
 - Gson (for JSON)
