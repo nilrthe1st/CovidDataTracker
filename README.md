@@ -11,9 +11,9 @@ This is a Java desktop application that visualizes COVID-19 case and death trend
 
 ##  Structure
 src/
-- api/ # Handles data fetching
-- data/ # Data model classes (CountryData, DailyData)
--  ui/ # GUI and chart rendering
+- api/ Handles data fetching
+- data/ Data model classes (CountryData, DailyData)
+-  ui/ GUI and chart rendering
 
 
 ## Why I Built This
