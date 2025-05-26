@@ -36,19 +36,36 @@ public class CovidTrackerApp {
     frame.setLayout(new BorderLayout());
 
     // Step 4: Top panel with inputs
-    JPanel inputPanel = new JPanel();
-
     JComboBox<String> countryDropdown = new JComboBox<>(countryOptions);
     String[] metricOptions = {"Total Cases", "Total Deaths"};
     JComboBox<String> metricDropdown = new JComboBox<>(metricOptions);
-
     JButton updateButton = new JButton("Show Data");
 
-    inputPanel.add(new JLabel("Country:"));
-    inputPanel.add(countryDropdown);
-    inputPanel.add(new JLabel("Metric:"));
-    inputPanel.add(metricDropdown);
-    inputPanel.add(updateButton);
+
+    // Use vertical layout and padding
+    JPanel inputPanel = new JPanel();
+    inputPanel.setLayout(new BoxLayout(inputPanel, BoxLayout.Y_AXIS));
+    inputPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+    // Create a row for country selection
+    JPanel countryPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+    countryPanel.add(new JLabel("Country:"));
+    countryPanel.add(countryDropdown);
+
+    // Create a row for metric selection
+    JPanel metricPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+    metricPanel.add(new JLabel("Metric:"));
+    metricPanel.add(metricDropdown);
+
+    // Create a row for the button
+    JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+    buttonPanel.add(updateButton);
+
+    // Add all sub-panels to main input panel
+    inputPanel.add(countryPanel);
+    inputPanel.add(metricPanel);
+    inputPanel.add(buttonPanel);
+
 
     frame.add(inputPanel, BorderLayout.NORTH);
 
