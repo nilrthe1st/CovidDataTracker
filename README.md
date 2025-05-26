@@ -1,4 +1,4 @@
-# COVID-19 Health Data Tracker 🦠📊
+# COVID-19 Health Data Tracker 
 
 This is a Java desktop application that visualizes COVID-19 case and death trends using an interactive GUI and real-world public health data.
 
