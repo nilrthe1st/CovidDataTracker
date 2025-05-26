@@ -46,6 +46,15 @@ Please download the `owid-covid-data.json` file from [Our World in Data](https:/
 
 ---
 
+## Dependencies
+
+- [Gson 2.10.1](https://github.com/google/gson)
+- [JFreeChart 1.5.3](https://github.com/jfree/jfreechart)
+- [JCommon 1.0.24](https://github.com/jfree/jcommon)
+
+
+---
+
 ##  Author
 Nil Roy  
 Freshman @ UW–Madison  
